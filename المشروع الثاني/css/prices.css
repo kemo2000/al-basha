@@ -1,0 +1,132 @@
+/* إعدادات عامة */
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('../assets/images/redo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* رأس الصفحة */
+.header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header .logo {
+  font-size: 2rem;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.header .nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header .nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header .nav li a:hover {
+  color: #f39c12;
+}
+
+/* الخانات */
+.price-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.price-category {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 250px;
+}
+
+.price-category:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.price-category h3 {
+  font-size: 1.5rem;
+  color: #f39c12;
+}
+
+.price-category p {
+  font-size: 1rem;
+}
+
+/* القائمة المنبثقة */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  color: white;
+  position: relative;
+  transform: scale(0.8); /* التأكد من التمركز */
+  opacity: 0; /* إخفاء الافتراضي */
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-content ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #f39c12;
+  transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+  color: #e67e22;
+}
